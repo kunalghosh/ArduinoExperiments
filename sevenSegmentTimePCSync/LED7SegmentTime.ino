@@ -131,7 +131,16 @@ void sevenSegment(int Pin , int value ){
 }
 
 void shiftRegWrite( int value ){
-        int bitInverse = value ^ 255;
+        int bitInverse = value ^ 255; 
+	// XOR with 255 because the LED module 
+	// is selected by setting select the pin high.
+	// Having done that we need to set the individual 
+	// led pins low to complete the circuit.
+	// It is easier for us to think of numbers on the 7segment LED
+	// as setting the individual LEDs high.
+	// But to actually display the digits, we need to set the 
+	// high to low and low to high, so that the circuit completes.
+	// And the number is displayed.
         digitalWrite( latchPin , LOW );
         Serial.println(bitInverse);
         shiftOut( dataPin , clockPin , LSBFIRST , bitInverse );
