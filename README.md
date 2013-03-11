@@ -10,6 +10,8 @@ ArduinoExperiments
 5. Multiplexed 7-Segment LED display ( 4 individual seven segment LED modules ) x 1
 
 ## Software
+Copy the 'Time' folder to the arduino 'Libraries' folder first. The arduino time library
+is courtesy http://playground.arduino.cc/Code/time.
 Code in ./sevenSegmentTimePCSync/LED7SegmentTime.ino just paste the code in the Arduino
 sketch area ( connect your arduino ) and hit upload.
 
