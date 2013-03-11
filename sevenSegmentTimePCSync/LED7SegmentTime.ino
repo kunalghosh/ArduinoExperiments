@@ -62,18 +62,19 @@ void digitalClockDisplay(int H, int M){ // H = Hour ( 7 am => 7 ,
                                         // 8 PM => 20 ) , M = Minute
         disp7Segment( H , 'H' );
         disp7Segment( M , 'M' );
-        //----------------
-          // digital clock display of the time
-  Serial.print(hour());
-  printDigits(minute());
-  printDigits(second());
-  Serial.print(" ");
-  Serial.print(day());
-  Serial.print(" ");
-  Serial.print(month());
-  Serial.print(" ");
-  Serial.print(year()); 
-  Serial.println(); 
+
+        // display time on the serial terminal
+
+	Serial.print(hour());
+	printDigits(minute());
+	printDigits(second());
+	Serial.print(" ");
+	Serial.print(day());
+	Serial.print(" ");
+	Serial.print(month());
+	Serial.print(" ");
+	Serial.print(year()); 
+	Serial.println(); 
 }
 
 void printDigits(int digits){
