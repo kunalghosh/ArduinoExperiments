@@ -39,7 +39,6 @@ void loop(){
                 Serial.println("Wait for sync message");
         else
                 digitalClockDisplay(hour(),minute());
-//        delay(500);                                                                                                                                                                            
 }
 
 void processSyncMessage(){
