@@ -1,9 +1,7 @@
 ArduinoExperiments
 ==================
 
-My Arduino Experiments:
-
-# 7 Segment LED Clock - Time Sync from Computer
+# EXPERIMENT 1 : 7 Segment LED Clock - Time Sync from Computer
 ## Hardware Required
 1. Arduino UNO R3 x 1
 2. Jumper Wires x 30
